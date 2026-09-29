@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyashree V | CSE Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1b0033, #3b0764, #16001f);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: rgba(20, 0, 35, 0.95);
+            border-bottom: 1px solid #ffb703;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd166;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .diya {
+            font-size: 70px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 5px #ffb703);
+            }
+            to {
+                filter: drop-shadow(0 0 30px #ffb703);
+            }
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #ffd166;
+            margin: 15px 0;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #ffb703;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #f5e6ca;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #ff7b00, #ffb703);
+            color: #25002f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #ffb703;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            color: #ffd166;
+            margin-bottom: 35px;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 183, 3, 0.4);
+        }
+
+        .about p {
+            color: #f5e6ca;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            width: 180px;
+            padding: 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            border: 1px solid #ffb703;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(255, 183, 3, 0.5);
+        }
+
+        .skill h3 {
+            color: #ffd166;
+            margin-bottom: 8px;
+        }
+
+        /* Goal */
+        .goal {
+            text-align: center;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 123, 0, 0.15),
+                rgba(255, 183, 3, 0.08)
+            );
+            border-top: 1px solid #ffb703;
+            border-bottom: 1px solid #ffb703;
+        }
+
+        .goal p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 19px;
+            color: #f5e6ca;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #14001f;
+            color: #ffd166;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🪔 Divyashree V</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#goal">Goal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <div class="diya">🪔</div>
+
+            <h1>Hi, I'm Divyashree V</h1>
+
+            <h2>CSE Student & Aspiring Web Developer</h2>
+
+            <p>
+                Welcome to my personal webpage! ✨<br>
+                I am a 2nd year B.E. Computer Science Engineering student
+                at Jain Institute of Technology.
+            </p>
+
+            <a href="#about" class="btn">Explore My Journey</a>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">🌸 About Me 🌸</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is <strong>Divyashree V</strong>.
+                I am currently pursuing my
+                <strong>B.E. in Computer Science Engineering</strong>
+                at <strong>Jain Institute of Technology</strong>.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy learning new technologies and creating beautiful
+                websites. I am passionate about web development and
+                continuously improving my programming and designing skills.
+            </p>
+
+            <br>
+
+            <p>
+                I also love the beautiful and colorful
+                <strong>Deepawali 🪔✨</strong> theme!
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">💻 My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Building web pages</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Styling & designing</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Interactive websites</p>
+            </div>
+
+            <div class="skill">
+                <h3>C Programming</h3>
+                <p>Problem solving</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Career Goal -->
+    <section class="goal" id="goal">
+        <h2 class="section-title">🚀 My Goal</h2>
+
+        <p>
+            My goal is to become a skilled
+            <strong>Web Developer</strong>.
+            I want to learn modern web technologies, build creative
+            and user-friendly websites, and grow as a professional
+            developer.
+        </p>
+
+        <br>
+
+        <div class="diya">🪔✨</div>
+
+        <p>
+            "Let your skills shine as brightly as the Deepawali lights!"
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🪔 Made with ❤️ by Divyashree V 🪔</p>
+        <p>© 2026 Divyashree V | CSE Student</p>
+    </footer>
+
+</body>
+</html>
